@@ -95,14 +95,13 @@ img {
   margin-right: auto;
   align-items: center;
 }
-.header-list-item {
-  padding-top: 24px;
-  padding-bottom: 24px;
-}
+
 .header-link {
+  display: block;
   text-decoration: none;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  padding: 24px 0;
 }
 .header-link:hover,
 .header-link:focus {
@@ -182,8 +181,16 @@ img {
 }
 /* ==========================      ABOUT       ================================= */
 .visually-hidden {
-  visibility: hidden;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
 }
+
 .about-list {
   display: flex;
   gap: 24px;
@@ -246,7 +253,7 @@ img {
   margin-bottom: 72px;
 }
 .portfolio-container {
-  padding: 36px 16px;
+  padding: 32px 16px;
   border: 1px solid #e7e9fc;
   border-top: none;
 }
@@ -259,13 +266,11 @@ img {
 .portfolio-list-item {
   width: calc((100% - 48px) / 3);
 }
-.portfolio-img {
-}
+
 .avatar-title {
   margin-bottom: 8px;
 }
-.portfolio-text {
-}
+
 /* ==========================       FOOTER        ================================= */
 .footer {
   background-color: #2e2f42;
