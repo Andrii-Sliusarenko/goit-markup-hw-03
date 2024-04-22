@@ -52,13 +52,13 @@ img {
 /* ========================    HEADER     =============================== */
 .page-header {
   background-color: #ffffff;
+  border-bottom: 1px solid #e7e9fc;
 }
 
 .header-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid #e7e9fc;
 }
 .header-list {
   display: flex;
@@ -66,7 +66,7 @@ img {
 }
 .contacts-list {
   display: flex;
-  column-gap: 40px;
+  gap: 40px;
 }
 .logo {
   font-family: "Raleway", sans-serif;
@@ -77,6 +77,9 @@ img {
   color: #4d5ae5;
   text-decoration: none;
   letter-spacing: 0.03em;
+}
+.header-logo {
+  margin-right: 76px;
 }
 .logo .studio {
   color: #2e2f42;
@@ -90,33 +93,36 @@ img {
   display: flex;
   margin-left: 76px;
   margin-right: auto;
+  align-items: center;
+}
+.header-list-item {
   padding-top: 24px;
   padding-bottom: 24px;
 }
-.nav-page .link {
+.header-link {
   text-decoration: none;
   letter-spacing: 0.02em;
   color: #2e2f42;
 }
-.nav-page .link:hover,
-.nav-page .link:focus {
+.header-link:hover,
+.header-link:focus {
   color: #404bbf;
 }
-.nav-page .link:active {
+.header-link:active {
   color: #404bbf;
   text-decoration: underline;
 }
-.nav-page .link {
+.header-link {
   text-decoration: none;
 }
-.nav-page .link:hover,
-.nav-page .link:focus {
+.header-link:hover,
+.header-link:focus {
   color: #404bbf;
 }
 .address {
   font-style: normal;
 }
-.address .contacts {
+.contacts {
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -137,7 +143,7 @@ img {
   max-width: 1440px;
   margin-left: auto;
   margin-right: auto;
-  padding-bottom: 0;
+  padding: 188px 0;
 }
 .hero-container {
   display: flex;
@@ -152,7 +158,7 @@ img {
   line-height: 1.07;
   letter-spacing: 0.02em;
   color: #ffffff;
-  width: 496px;
+  max-width: 496px;
   margin-bottom: 48px;
 }
 .hero .button {
@@ -175,12 +181,15 @@ img {
   background-color: #404bbf;
 }
 /* ==========================      ABOUT       ================================= */
-.about {
-  display: none;
+.visually-hidden {
+  visibility: hidden;
 }
 .about-list {
   display: flex;
   gap: 24px;
+}
+.about-list-point {
+  width: calc((100% - 72px) / 4);
 }
 .about-list-item {
   color: #2e2f42;
@@ -188,7 +197,7 @@ img {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  width: calc((100% - 72px) / 4);
+  margin-bottom: 8px;
 }
 .text {
   letter-spacing: 0.02em;
@@ -201,6 +210,12 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
+.member-container {
+  padding: 32px 0;
+}
+.team-title {
+  margin-bottom: 72px;
+}
 .team-member {
   color: #2e2f42;
   font-size: 20px;
@@ -208,10 +223,11 @@ img {
   line-height: 24px;
   letter-spacing: 0.02em;
   text-align: center;
+  margin-bottom: 8px;
 }
 .team-list {
   display: flex;
-  column-gap: 24px;
+  gap: 24px;
 }
 .team-card {
   background-color: #ffffff;
@@ -221,18 +237,18 @@ img {
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
-.team-card-avatar {
-  margin-bottom: 32px;
-}
-.team-member {
-  margin-bottom: 8px;
-}
+
 .team-spec {
-  margin-bottom: 32px;
+  text-align: center;
 }
 /* ==========================       PORTFOLIO       ================================= */
 .portfolio-title {
   margin-bottom: 72px;
+}
+.portfolio-container {
+  padding: 36px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
 }
 .portfolio-list {
   display: flex;
@@ -242,20 +258,13 @@ img {
 }
 .portfolio-list-item {
   width: calc((100% - 48px) / 3);
-  border-bottom: 1px solid #e7e9fc;
-  border-left: 1px solid #e7e9fc;
-  border-right: 1px solid #e7e9fc;
 }
 .portfolio-img {
-  margin-bottom: 32px;
 }
 .avatar-title {
   margin-bottom: 8px;
-  padding-left: 16px;
 }
 .portfolio-text {
-  margin-bottom: 32px;
-  padding-left: 16px;
 }
 /* ==========================       FOOTER        ================================= */
 .footer {
@@ -263,9 +272,6 @@ img {
   max-width: 1440px;
   margin-left: auto;
   margin-right: auto;
-  padding-bottom: 0;
-}
-.footer-container {
   padding-top: 100px;
   padding-bottom: 100px;
 }
@@ -274,10 +280,11 @@ img {
   letter-spacing: 0.02em;
   color: #f4f4fd;
   max-width: 264px;
-
-  margin-top: 16px;
 }
-
+.foot-logo {
+  display: inline-block;
+  margin-bottom: 16px;
+}
 .logo .foot-studio {
   color: #f4f4fd;
 }

@@ -29,27 +29,22 @@
   <body>
     <header class="page-header">
       <div class="container header-container">
-        <a class="logo" href="./index.html">
+      <nav class="nav-page">
+        <a class="logo header-logo" href="./index.html">
           Web<span class="studio">Studio</span>
         </a>
-          <!-- ===== NAVIGATION ===== -->
-      <nav class="nav-page">
-        
         <ul class="header-list">
-          <li class="header-list-item"><a class="link" href="./index.html">Studio</a></li>
-          <li class="header-list-item"><a class="link" href="">Portfolio</a></li>
-          <li class="header-list-item"><a class="link" href="">Contacts</a></li>
+          <li class="header-list-item"><a class="header-link" href="./index.html">Studio</a></li>
+          <li class="header-list-item"><a class="header-link" href="">Portfolio</a></li>
+          <li class="header-list-item"><a class="header-link" href="">Contacts</a></li>
         </ul>
       </nav>
-      <!--contacts-->
       <address class="address">
         <ul class="contacts-list">
-          <li>
-            <a class="contacts" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
-            >
+          <li class="contacts-list-item">
+            <a class="contacts" href="mailto:info@devstudio.com">info@devstudio.com</a>
           </li>
-          <li>
+          <li class="contacts-list-item">
             <a class="contacts" href="tel:+110001111111">+11 (000) 111-11-11</a>
           </li>
         </ul>
@@ -68,30 +63,30 @@
       <!-- ===== ABOUT ===== -->
       <section class="section">
         <div class="container">
-        <h2 class="about" >about</h2>
+        <h2 class="visually-hidden" >about</h2>
         <ul class="about-list">
-          <li>
+          <li class="about-list-point">
             <h3 class="about-list-item">Strategy</h3>
             <p class="text">
               Our goal is to identify the business problem to walk away with the
               perfect and creative solution.
             </p>
           </li>
-          <li>
+          <li class="about-list-point">
             <h3 class="about-list-item">Punctuality</h3>
             <p class="text">
               Bring the key message to the brand's audience for the best price
               within the shortest possible time.
             </p>
           </li>
-          <li>
+          <li class="about-list-point">
             <h3 class="about-list-item">Diligence</h3>
             <p class="text">
               Research and confirm brands that present the strongest digital
               growth opportunities and minimize risk.
             </p>
           </li>
-          <li>
+          <li class="about-list-point">
             <h3 class="about-list-item">Technologies</h3>
             <p class="text">
               Design practice focused on digital experiences. We bring forth a
@@ -105,7 +100,7 @@
       <!-- ===== TEAM ===== -->
       <section class="section team">
         <div class="container">
-        <h2 class="section-title">Our Team</h2>
+        <h2 class="section-title team-title">Our Team</h2>
         <ul class="team-list">
           <li class="team-card">
             <img class="team-card-avatar"
@@ -114,8 +109,10 @@
               width="264"
               height="260"
             />
+            <div class="member-container">
             <h3 class="team-member">Mark Guerrero</h3>
-            <p class="text">Product Designer</p>
+            <p class="text team-spec">Product Designer</p>
+            </div>
           </li>
           <li class="team-card">
             <img class="team-card-avatar"
@@ -124,8 +121,10 @@
               width="264"
               height="260"
             />
+            <div class="member-container">
             <h3 class="team-member">Tom Ford</h3>
             <p class="text team-spec">Frontend Developer</p>
+            </div>
           </li>
           <li class="team-card">
             <img class="team-card-avatar"
@@ -134,8 +133,10 @@
               width="264"
               height="260"
             />
+            <div class="member-container">
             <h3 class="team-member">Camila Garcia</h3>
-            <p class="text">Marketing</p>
+            <p class="text team-spec">Marketing</p>
+            </div>
           </li>
           <li class="team-card">
             <img class="team-card-avatar"
@@ -144,8 +145,10 @@
               width="264"
               height="260"
             />
+            <div class="member-container">
             <h3 class="team-member">Daniel Wilson</h3>
-            <p class="text">UI Designer</p>
+            <p class="text team-spec">UI Designer</p>
+            </div>
           </li>
         </ul>
         </div>
@@ -162,8 +165,10 @@
               width="360"
               height="300"
             />
+            <div class="portfolio-container">
             <h3 class="avatar-title">Banking App</h3>
             <p class="text portfolio-text">App</p>
+            </div>
           </li>
           <li class="portfolio-list-item">
             <img class="portfolio-img"
@@ -172,8 +177,10 @@
               width="360"
               height="300"
             />
+            <div class="portfolio-container">
             <h3 class="avatar-title">Cashless Payment</h3>
             <p class="text portfolio-text">Marketing</p>
+            </div>
           </li>
           <li class="portfolio-list-item">
             <img class="portfolio-img"
@@ -182,8 +189,10 @@
               width="360"
               height="300"
             />
+            <div class="portfolio-container">
             <h3 class="avatar-title">Meditation App</h3>
             <p class="text portfolio-text">App</p>
+            </div>
           </li>
           <li class="portfolio-list-item">
             <img class="portfolio-img"
@@ -192,8 +201,10 @@
               width="360"
               height="300"
             />
+            <div class="portfolio-container">
             <h3 class="avatar-title">Taxi Service</h3>
             <p class="text portfolio-text">Marketing</p>
+            </div>
           </li>
           <li class="portfolio-list-item">
             <img class="portfolio-img"
@@ -202,8 +213,10 @@
               width="360"
               height="300"
             />
+            <div class="portfolio-container">
             <h3 class="avatar-title">Screen Illustrations</h3>
             <p class="text portfolio-text">Design</p>
+            </div>
           </li>
           <li class="portfolio-list-item">
             <img class="portfolio-img"
@@ -212,8 +225,10 @@
               width="360"
               height="300"
             />
+            <div class="portfolio-container">
             <h3 class="avatar-title">Online Courses</h3>
             <p class="text portfolio-text">Marketing</p>
+            </div>
           </li>
         </ul>
         </div>
