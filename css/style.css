@@ -155,6 +155,7 @@ img {
 }
 .hero .button {
   background-color: #4d5ae5;
+  display: block;
   color: #ffffff;
   font-size: 16px;
   font-weight: 500;
